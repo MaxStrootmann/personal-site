@@ -11,16 +11,16 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'KMA Software',
+    template: '%s | Software consulting voor de technische sector',
   },
-  description: 'This is my portfolio.',
+  description: 'Bereid je voor op de toekomst met AI en de nieuwste oplossingen op het gebied van bedrijfssoftware.',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'KMA Software | Software consulting voor de technische sector',
+    description: 'Bereid je voor op de toekomst met AI en de nieuwste oplossingen op het gebied van bedrijfssoftware.',
     url: baseUrl,
-    siteName: 'My Portfolio',
-    locale: 'en_US',
+    siteName: 'KMA Software',
+    locale: 'nl_NL',
     type: 'website',
   },
   robots: {
@@ -47,16 +47,14 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-zinc-700 bg-zinc-50 dark:text-zinc-300 dark:bg-zinc-900',
+        'text-greyText bg-blueBg',
         GeistSans.variable,
         GeistMono.variable
       )}
     >
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          <Navbar />
           {children}
-          <Footer />
           <Analytics />
           <SpeedInsights />
         </main>
